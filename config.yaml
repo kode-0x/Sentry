@@ -1,0 +1,24 @@
+# Sentry Configuration
+
+camera:
+  device: 0
+  frame_interval_ms: 250
+
+detection:
+  required_consecutive_frames: 5
+  recognition_threshold: 0.55
+
+security:
+  lock_on_unknown_face: true
+  screenshot_on_unknown_face: true
+  cooldown_seconds: 30
+
+storage:
+  screenshot_directory: "./screenshots"
+  log_directory: "./logs"
+  model_directory: "./models"
+  retention_days: 7
+
+notifications:
+  email: true
+  whatsapp: false
